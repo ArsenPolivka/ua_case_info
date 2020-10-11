@@ -1,12 +1,23 @@
 header #infobar {
     background-color:#252525;
     display: inline;
-    justify-content: center
+    justify-content: center;
+}
+#phonenumber img {
+    height: 23px;
+    width: 30px;
+}
+#phonenumber p {
+    display: inline;
+    font-size: 14px;
+}
+#gmail img {
+    display: flex;
+    height: 23px;
+    width: 30px;
 }
 
-header div {
 
 
-}
 
 
