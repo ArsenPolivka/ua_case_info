@@ -84,6 +84,7 @@ nav {
     justify-content: space-between;
     background-color: white;
     box-shadow: 10px 0px 20px black;
+    height: 100px;
 }
 nav img {
     width: 120px;
@@ -125,12 +126,113 @@ nav img {
   left: 0;
 }
 
+@media (min-width: 320px) {
+    .
+    }
+
+}
+@media (min-width: 550px) {
+    .container-fluid{
+        width: 550px;
+    }
+
+}
+/*Бургер меню*/
+/* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  position: relative;
+  align-items: center;;  /* центрируем содержимое кнопки */
+  top: 10px;
+  left: 0px;
+  width: 30px;
+  height: 26px;
+  margin-right: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+/* контейнер меню */
+.menu__box {
+  display: flex;
+  position: relative;
+  visibility: hidden;
+  top: -58px;
+  left: 100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .0);
+}
+/* элементы меню */
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  transition-duration: .3s;
+}
+.menu__box {
+  transition-duration: .3s;
+}
+.menu__item {
+  transition-duration: .3s;
+}
+
 /**Carousel**/
 
 .carousel {
-    width: 90%;
-    display: flex;
-    justify-content: space-around;
-
-    
+    position: block;
+    width: 98%;
+    margin: auto;
 }
