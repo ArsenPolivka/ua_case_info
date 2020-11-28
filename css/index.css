@@ -1,23 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+           /*Infobar*/ 
+
+.container-fluid {
+    padding: 0px;
+}
+
 header #infobar {
     background-color:#252525;
-    display: inline;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+}
+#contact {
+    margin-left: 40px;
+}
+#phonenumber{
+    margin-left: 60px;
+}
+#gmail {
+    margin-left: 70px;
 }
 #phonenumber img {
-    height: 23px;
-    width: 30px;
+    width: 20px;
+    height: 15px;
+    margin: auto;
+}
+
+#gmail img{
+    width: 19px;
+    height: 17px;
+    margin: auto;
 }
 #phonenumber p {
-    display: inline;
-    font-size: 14px;
+    color: white;
+    margin: auto;
+    margin-left: 10px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
 }
-#gmail img {
+#gmail p {
+    color: white;
+    margin: auto;
+    margin-left: 10px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+
+}
+#phonenumber {
     display: flex;
-    height: 23px;
-    width: 30px;
+    justify-content: flex-start;
+}
+#gmail {
+    display: flex;
+    justify-content: flex-start;
+}
+#networks {
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+#networks img {
+    width: 20px;
+    margin: auto;
+    transition: opacity 0.3s ease;
+}
+#networks img:hover {
+    opacity: 50%;
+    
+}
+#contact {
+    display: flex;
+    justify-content: space-between;
 }
 
+/*Navbar*/
 
+header nav{
+    list-style-type: none;
+}
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 10px 0px 20px black;
+}
+nav img {
+    width: 120px;
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#menu{
+    margin-top: 20px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+#menu a {
+  color: rgb(41, 39, 39);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.10em;
+  
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
 
+#menu a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 5px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: rgb(27, 26, 26);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#menu a:hover:after { 
+  width: 100%; 
+  left: 0;
+}
 
+/**Carousel**/
+
+.carousel {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+
+    
+}
