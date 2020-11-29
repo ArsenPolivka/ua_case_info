@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
+:root {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar { width: 5px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: #252525; }
+::-webkit-scrollbar-track {  background-color: #252525;}
+::-webkit-scrollbar-track-piece { background-color: #ffffff;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #252525; border-radius: 0px;}
+::-webkit-scrollbar-corner { background-color: rgb(255, 255, 255);}
+::-webkit-resizer { background-color: rgb(255, 255, 255);}
 
            /*Infobar*/ 
 
@@ -35,6 +46,7 @@ header #infobar {
 #phonenumber p {
     color: white;
     margin: auto;
+    margin-top: 6px;
     margin-left: 10px;
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
@@ -82,8 +94,8 @@ header nav{
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: white;
-    box-shadow: 10px 0px 20px black;
+    background-color: rgb(255, 247, 247);
+    box-shadow: 15px 0px 7px black;
     height: 100px;
 }
 nav img {
@@ -97,37 +109,38 @@ nav img {
     margin-right: 50px;
     font-size: 20px;
 }
-#menu a {
-  color: rgb(41, 39, 39);
-  text-transform: uppercase;
+#navbarNavAltMarkup a {
   text-decoration: none;
-  letter-spacing: 0.10em;
-  
+  letter-spacing: 0.15em;
   display: inline-block;
   padding: 15px 20px;
   position: relative;
-  font-family: 'Roboto', sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#menu a:after {    
+#navbarNavAltMarkup a:after {    
   background: none repeat scroll 0 0 transparent;
-  bottom: 5px;
+  bottom: 4px;
   content: "";
   display: block;
-  height: 2px;
+  height: 1.5px;
   left: 50%;
   position: absolute;
-  background: rgb(27, 26, 26);
+  background: rgb(126, 126, 126);
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-#menu a:hover:after { 
+#navbarNavAltMarkup a:hover:after { 
   width: 100%; 
   left: 0;
 }
 
-/*Бургер меню*/
-
+#navbarNavAltMarkup {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    font-style: normal;
+}
 
 
 /**Carousel**/
